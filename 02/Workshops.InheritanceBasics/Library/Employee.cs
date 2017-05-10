@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-
-    
-
     public abstract class Employee
     {
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
         public Employee(string name)
         {
             Name = name;
         }
+
+        //multiple constructors
+        //add chef
 
         public virtual EmployeeRanks GetRank()
         {

@@ -12,7 +12,7 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             var employees = new List<Employee>();
-            employees.Add(new Waiter("Diamianos"));
+            employees.Add(new Waiter("Damianos"));
             employees.Add(new Cook("Mitsos"));
             employees.Add(new Manager("Takis"));
 

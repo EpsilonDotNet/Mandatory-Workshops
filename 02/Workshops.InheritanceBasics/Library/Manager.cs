@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class Manager : Employee
+    public sealed class Manager : Employee
     {
         public Manager(string name) : base(name)
         {
