@@ -9,13 +9,6 @@ namespace Workshops.Delegates
     public class DelegateSamples2
     {
 
-
-        private void DoWork()
-        {
-            Console.WriteLine("Work done !");
-        }
-
-
         public void Main()
         {
 
@@ -54,5 +47,11 @@ namespace Workshops.Delegates
 
 
         }
+
+        private void DoWork()
+        {
+            Console.WriteLine("Work done !");
+        }
+
     }
 }
