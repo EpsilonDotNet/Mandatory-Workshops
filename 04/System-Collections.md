@@ -9,13 +9,15 @@
 
 ### HashSet
 
-### KeyValuePair
+### KeyValuePair -
 
-### LinkedList
+### LinkedList -
 
 ### List
 
 ### Queue
+
+### Stack
 
 ### SortedDictionary
 
@@ -23,9 +25,7 @@
 
 ### SortedSet
 
-### Stack
-
-## System Collections Concurrent
+## System Collections Concurrent - Simple Example for all
 
 ### BlockingCollection
 
@@ -37,20 +37,24 @@
 
 ### ConcurrentStack
 
-### OrderablePartitioner
+### OrderablePartitioner --
 
-### Partitioner
+### Partitioner --
 
 ## System Collections ​Specialized
 
-### HybridDictionary
+### HybridDictionary - Tell how it works
 
 ### ListDictionary
 
-### NameValueCollection
-
 ### OrderedDictionary
 
-### StringCollection
+---
 
-### StringDictionary
+### IEnumerable
+
+### IOrdered
+
+### ICollection
+
+### IComparable
