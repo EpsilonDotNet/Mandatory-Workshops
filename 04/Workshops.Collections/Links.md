@@ -7,3 +7,4 @@
 1. https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.7
 1. https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.7
 1. https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1?view=netframework-4.7 
+1. http://www.claudiobernasconi.ch/2013/07/22/when-to-use-ienumerable-icollection-ilist-and-list/
