@@ -15,27 +15,6 @@ namespace Workshops.Delegates
         // ==================
         // A delegate is a type that represents references to methods with a particular parameter list and return type.
 
-        public delegate void DoWorkDelegate();
-
-        public delegate string DoWorkAndReturnStuffDelegate(string input);
-
-        public void DoWork()
-        {
-            Console.WriteLine("Work done !");
-        }
-
-        public string DoWorkAndReturnStuff(string parameter)
-        {
-            string result = "myValue";
-            Console.WriteLine($"Work done with parameter '{parameter}' and returning '{result}'");
-
-            return result;
-        }
-
-        public void DoOtherWork()
-        {
-            Console.WriteLine("Other Work done !");
-        }
 
         public void Main()
         {
@@ -85,12 +64,33 @@ namespace Workshops.Delegates
 
             string result = delegateWithParamsAndReturnType.Invoke("Test input");
             Console.WriteLine($"Delegate invocation result: {result}");
-            
-           
+
+
 
         }
 
 
+        public delegate void DoWorkDelegate();
+
+        public delegate string DoWorkAndReturnStuffDelegate(string input);
+
+        public void DoWork()
+        {
+            Console.WriteLine("Work done !");
+        }
+
+        public string DoWorkAndReturnStuff(string parameter)
+        {
+            string result = "myValue";
+            Console.WriteLine($"Work done with parameter '{parameter}' and returning '{result}'");
+
+            return result;
+        }
+
+        public void DoOtherWork()
+        {
+            Console.WriteLine("Other Work done !");
+        }
 
     }
 }
