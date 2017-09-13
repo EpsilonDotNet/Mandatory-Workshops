@@ -1,0 +1,9 @@
+1. https://github.com/facebookincubator/create-react-app/issues/1015
+1. https://github.com/FormidableLabs/spectacle#markdown-slides
+1. https://github.com/thejameskyle/spectacle-code-slide
+1. https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections
+1. https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1?view=netframework-4.7
+1. https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.7
+1. https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.7
+1. https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.7
+1. https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.icollection-1?view=netframework-4.7 
