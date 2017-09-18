@@ -44,26 +44,40 @@ public interface ICollection<T> : IEnumerable<T>, IEnumerable
 
 * Παρέχουν αναζήτηση, ταξινόμηση και μετασχηματισμό
 
-
 ### HashSet
 
-### KeyValuePair -
+* Είναι η υλοποίηση της C# για την δομή δεδομένων Σύνολο(Set)
 
-### LinkedList -
+* Δεν υπάρχουν διπλότυπα στοιχεία και δεν υπάρχει προκαθορισμένη σειρά.
 
 ### Queue
 
+* Παρέχει μία δομή FIFO
+
 ### Stack
+
+* Παρέχει μία δομή LIFO
+
+### KeyValuePair
+
+* Χρησιμοποιείται εσωτερικά από το Dictionary
+* Δεν έχει νόημα να το χρησιμοποιήσουμε, προτιμούμε το Dictionary
+
+### LinkedList
+
+* Υλοποίηση της δομής δεδομένων Συνδεδεμένης Λίστας
 
 ### SortedDictionary
 
 ### SortedList
 
-* Key/value pair collection 
-
 ### SortedSet
 
 ## System Collections Concurrent - Simple Example for all
+
+* Παρέχουν thread safe πρόσβαση σε κοινόχρηστα data
+
+* Βελτιώνουν το scaling και την απόδοση των εφαρμογών multi-theading
 
 ### BlockingCollection
 
@@ -73,7 +87,11 @@ public interface ICollection<T> : IEnumerable<T>, IEnumerable
 
 ### ConcurrentQueue
 
+* Thread sage Ουρά
+
 ### ConcurrentStack
+
+* Thread safe Στοίβα
 
 ### OrderablePartitioner --
 
