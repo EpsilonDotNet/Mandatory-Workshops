@@ -1,4 +1,5 @@
-﻿using Collections.GetEnumerator;
+﻿using Collections.Concurrency;
+using Collections.GetEnumerator;
 using Collections.Performance;
 using System;
 using System.Collections.Generic;
@@ -10,13 +11,25 @@ namespace Collections
     {
         static void Main(string[] args)
         {
-            //Performance 
-            var hashSetVsListInstance = new HashSetVsList();
-            hashSetVsListInstance.Execute();
-            
-            //GetEnumeratorExample
-            var getEnumeratorExampleInstance = new GetEnumeratorExample();
-            getEnumeratorExampleInstance.Execute();
+            ////Performance 
+            //var hashSetVsListInstance = new HashSetVsList();
+            //hashSetVsListInstance.Execute();
+
+            ////GetEnumeratorExample
+            //var getEnumeratorExampleInstance = new GetEnumeratorExample();
+            //getEnumeratorExampleInstance.Execute();
+
+            ////BlockingCollectionSample
+            //BlockingCollectionSample.Execute();
+
+            ////ConcurrentBagSample
+            //ConcurrentBagSample.Execute();
+
+            ////ConcurrentDictionarySample
+            //ConcurentDictionarySample.Execute();
+
+            ////ConcurrentQueueSample
+            //ConcurrentQueueSample.Execute();
         }
     }
 }

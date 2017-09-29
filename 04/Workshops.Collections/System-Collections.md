@@ -80,15 +80,28 @@ public interface ICollection<T> : IEnumerable<T>, IEnumerable
 
 ## System Collections Concurrent - Simple Example for all
 
-* Παρέχουν thread safe πρόσβαση σε κοινόχρηστα data
+* Παρέχουν thread safe access σε shared data
 
-* Βελτιώνουν το scaling και την απόδοση των εφαρμογών multi-theading
+* Βελτιώνουν το scaling και την απόδοση των εφαρμογών multi-threading
 
 ### BlockingCollection
 
+* Υλοποίηση του Producer Consumer pattern
+* Προσθέτει και αφαιρεί αντικείμενα από πολλαπλά thread
+* Παίρνει ως προαιρετική παράμετρο μέγιστη χωρητικότητα
+* Παρέχει cancellation
+* Τα TryAdd και TryTake δεν είναι blocking
+
 ### ConcurrentBag
 
+* Υλοποίηση του Work stealing algorithm
+* Thread Safe υλοποίηση για αντικείμενα ενός collection χωρίς προκαθορισμένη σειρά.
+
+[comment]: (In parallel computing, work stealing is a scheduling strategy for multithreaded computer programs. It solves the problem of executing a dynamically multithreaded computation, one that can "spawn" new threads of execution, on a statically multithreaded computer, with a fixed number of processors (or cores). It does so efficiently both in terms of execution time, memory usage, and inter-processor communication.)
+
 ### ConcurrentDictionary
+
+* Thread Safe υλοποίηση του Dictionary
 
 ### ConcurrentQueue
 
@@ -112,10 +125,6 @@ public interface ICollection<T> : IEnumerable<T>, IEnumerable
 
 ---
 
-### IEnumerable
-
 ### IOrdered
-
-### ICollection
 
 ### IComparable
