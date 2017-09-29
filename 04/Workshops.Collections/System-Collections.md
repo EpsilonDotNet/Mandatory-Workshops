@@ -32,6 +32,11 @@ public interface ICollection<T> : IEnumerable<T>, IEnumerable
 
 ## IEnumerable
 
+* Όλα τα System.Collections υλοποιούν το IEnumerable
+* Προσφέρει επαναλήψεις πάνω στα Collection μέσω του GetEnumerator
+* Code sample
+
+
 ## System Collections Generic
 
 ### Dictionary

@@ -1,4 +1,5 @@
-﻿using Collections.Performance;
+﻿using Collections.GetEnumerator;
+using Collections.Performance;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,8 +13,10 @@ namespace Collections
             //Performance 
             var hashSetVsListInstance = new HashSetVsList();
             hashSetVsListInstance.Execute();
-
-
+            
+            //GetEnumeratorExample
+            var getEnumeratorExampleInstance = new GetEnumeratorExample();
+            getEnumeratorExampleInstance.Execute();
         }
     }
 }
