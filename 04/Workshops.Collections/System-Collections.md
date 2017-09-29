@@ -90,7 +90,7 @@ public interface ICollection<T> : IEnumerable<T>, IEnumerable
 * Παίρνει ως προαιρετική παράμετρο μέγιστη χωρητικότητα
 * Παρέχει cancellation
 * Τα TryAdd και TryTake δεν είναι blocking
-
+---
 ### ConcurrentBag
 
 * Υλοποίηση του Work stealing algorithm
