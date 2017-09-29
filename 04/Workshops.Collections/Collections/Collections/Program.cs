@@ -30,6 +30,13 @@ namespace Collections
 
             ////ConcurrentQueueSample
             //ConcurrentQueueSample.Execute();
+
+
+            ////ConcurrentStackSample
+            //ConcurrentStackSample.Execute();
+
+            ////HybridDictionary Performance
+            HybridDictionaryBenchmark.Execute();
         }
     }
 }

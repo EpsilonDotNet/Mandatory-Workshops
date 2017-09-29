@@ -34,14 +34,13 @@ public interface ICollection<T> : IEnumerable<T>, IEnumerable
 
 * Όλα τα System.Collections υλοποιούν το IEnumerable
 * Προσφέρει επαναλήψεις πάνω στα Collection μέσω του GetEnumerator
-* Code sample
-
 
 ## System Collections Generic
 
 ### Dictionary
 
 * key/value pair collection και οργανώνονται με βάση το key
+* Προσοχή το HashTable είναι παλαιότερη υλοποίηση του .ΝΕΤ αντικαταστήστε το με Dictionary
 
 ### List
 
@@ -111,20 +110,14 @@ public interface ICollection<T> : IEnumerable<T>, IEnumerable
 
 * Thread safe Στοίβα
 
-### OrderablePartitioner --
-
-### Partitioner --
-
 ## System Collections ​Specialized
 
-### HybridDictionary - Tell how it works
+### HybridDictionary
+
+* Χρησιμοποιείται όπως το Dictionary
+* Προτείνετε σε περιπτώσεις όπου έχουμε άγνωστο αριθμό στοιχείων.
+* Σε μικρά collection χρησιμοποιεί το ListDictionary και σε μεγάλα collection το HashTable
 
 ### ListDictionary
 
 ### OrderedDictionary
-
----
-
-### IOrdered
-
-### IComparable
