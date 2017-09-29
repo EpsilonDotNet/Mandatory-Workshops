@@ -120,4 +120,7 @@ public interface ICollection<T> : IEnumerable<T>, IEnumerable
 
 ### ListDictionary
 
+* Προτείνεται για λιγότερα αντικείμενα από 10
+* Δεν χρησιμοποιείτε για μεγάλα collection
+
 ### OrderedDictionary
