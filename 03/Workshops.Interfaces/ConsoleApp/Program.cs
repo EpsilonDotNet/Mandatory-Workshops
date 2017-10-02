@@ -30,13 +30,18 @@ namespace ConsoleApp
             ///================== OR ===================
             ///ICustomerRepository customerRepository = new AzureCustomerRepository();
 
-
-            var customer = customerRepository.GetCustomerById(1);
-
-            logger.WriteLog($"Customer name: {customer.Name}");
-
+            Run(logger, customerRepository);
 
             Console.ReadKey();
+        }
+
+
+        static void Run(ILogger logger, ICustomerRepository customerRepository)
+        {
+
+            var customer = customerRepository.GetCustomerById(1);
+            logger.WriteLog($"Customer name: {customer.Name}");
+
         }
     }
 }
