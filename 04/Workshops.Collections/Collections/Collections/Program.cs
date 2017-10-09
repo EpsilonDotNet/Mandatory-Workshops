@@ -36,7 +36,7 @@ namespace Collections
             //ConcurrentStackSample.Execute();
 
             ////HybridDictionary Performance
-            HybridDictionaryBenchmark.Execute();
+            //HybridDictionaryBenchmark.Execute();
         }
     }
 }

@@ -10,42 +10,28 @@ namespace Collections.Concurrency
     public class ConcurrentBagSample
     {
         private static ConcurrentBag<int> data = new ConcurrentBag<int>();
-
-        private static AutoResetEvent autoResetEvent = new AutoResetEvent(false);
-
-        //Work stealing algorithm sample
+        
         public static void Execute()
         {
-            Task task1 = Task.Factory.StartNew(() =>
+            for (int i = 1; i <= 100; ++i)
             {
-                for (int i = 1; i <= 4; ++i)
-                {
-                    data.Add(i);
-                }
-                //wait for second thread to add its items
-                autoResetEvent.WaitOne();
+                data.Add(i);
+            }
 
-                while (data.IsEmpty == false)
+            var task = Task.Factory.StartNew(() =>
+            {
+
+                int item;
+                while (!data.IsEmpty)
                 {
-                    int item;
                     if (data.TryTake(out item))
                     {
-                        Console.WriteLine($"Item {item} was taken of the Dictionary");
-                    }
+                        Console.WriteLine($"{item} taken");
+                    }                    
                 }
             });
-
-
-            Task task2 = Task.Factory.StartNew(() =>
-            {
-                for (int i = 5; i <= 7; ++i)
-                {
-                    data.Add(i);
-                }
-                autoResetEvent.Set();
-            });
-
-            task1.Wait();
+            
+            Task.WaitAll(task);
 
             Console.Read();
         }

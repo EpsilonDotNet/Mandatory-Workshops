@@ -54,10 +54,16 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>IEnumerable</Heading>
           <List type="A">
-            <Appear><ListItem>Όλα τα System.Collections υλοποιούν το IEnumerable</ListItem></Appear>
-            <Appear><ListItem>Προσφέρει επαναλήψεις πάνω στα Collection μέσω του GetEnumerator</ListItem></Appear>
+            <Appear><ListItem>All System.Collections implement IEnumerable</ListItem></Appear>
+            <Appear><ListItem>GetEnumerator offers iterations on Collections</ListItem></Appear>
           </List>
           <Appear><Text size={3} textColor="tertiary">Demo Time!</Text></Appear>
+          <Notes>
+            <ul>
+              <li>Όλα τα System.Collections υλοποιούν το IEnumerable</li>
+              <li>Προσφέρει επαναλήψεις πάνω στα Collection μέσω του GetEnumerator</li>
+            </ul>
+          </Notes>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={1} textColor="secondary">System Collections Generic</Heading>
@@ -65,49 +71,82 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={3} textColor="tertiary" caps>Dictionary</Heading>
           <List type="A">
-            <Appear><ListItem>key/value pair collection και οργανώνονται με βάση το key</ListItem></Appear>
-            <Appear><ListItem>Προσοχή το HashTable είναι παλαιότερη υλοποίηση του .ΝΕΤ αντικαταστήστε το με Dictionary</ListItem></Appear>
+            <Appear><ListItem>Key/Value pair collection organized by key</ListItem></Appear>
+            <Appear><ListItem>Warning HashTable is an old .ΝΕΤ implentation replace with Dictionary</ListItem></Appear>
           </List>
+          <Notes>
+            <ul>
+              <li>Key/Value pair collection και οργανώνονται με βάση το key</li>
+              <li>Προσοχή το HashTable είναι παλαιότερη υλοποίηση του .ΝΕΤ αντικαταστήστε το με Dictionary</li>
+            </ul>
+          </Notes>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>List</Heading>
           <List type="A">
-            <Appear><ListItem>Λίστα από objects προσπελάσιμα με βάση τo index</ListItem></Appear>
-            <Appear><ListItem>Παρέχουν αναζήτηση, ταξινόμηση και μετασχηματισμό</ListItem></Appear>
+            <Appear><ListItem>List of objects accessed by index</ListItem></Appear>
+            <Appear><ListItem>Provides methods to search, sort, and manipulate lists</ListItem></Appear>
           </List>
+          <Notes>
+            <ul>
+              <li>Λίστα από objects προσπελάσιμα με βάση τo index</li>
+              <li>Παρέχουν αναζήτηση, ταξινόμηση και μετασχηματισμό</li>
+            </ul>
+          </Notes>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={1} textColor="secondary">HashSet</Heading>
           <List type="A">
-            <Appear><ListItem>Είναι η υλοποίηση της C# για την δομή δεδομένων Σύνολο(Set)</ListItem></Appear>
-            <Appear><ListItem>Δεν υπάρχουν διπλότυπα στοιχεία και δεν υπάρχει προκαθορισμένη σειρά.</ListItem></Appear>
+            <Appear><ListItem>C# implementation for Set Data Structure</ListItem></Appear>
+            <Appear><ListItem>No duplicate items with no specific order</ListItem></Appear>
           </List>
           <Appear><Text size={3} textColor="primary">Demo Time!</Text></Appear>
+          <Notes>
+            <ul>
+              <li>Είναι η υλοποίηση της C# για την δομή δεδομένων Σύνολο(Set)</li>
+              <li>Δεν υπάρχουν διπλότυπα στοιχεία και δεν υπάρχει προκαθορισμένη σειρά.</li>
+            </ul>
+          </Notes>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={3} textColor="tertiary" caps>Queue</Heading>
           <List type="A">
-            <Appear><ListItem>Παρέχει μία δομή FIFO</ListItem></Appear>
+            <Appear><ListItem>Data Structure for FIFO</ListItem></Appear>
           </List>
+          <Notes>
+            <h2>Παρέχει μία δομή FIFO</h2>
+          </Notes>
         </Slide>  
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>Stack</Heading>
           <List type="A">
-            <Appear><ListItem>Παρέχει μία δομή LIFO</ListItem></Appear>
+            <Appear><ListItem>Data Structure for LIFO</ListItem></Appear>
           </List>
+          <Notes>
+            <h2>Παρέχει μία δομή LIFO</h2>
+          </Notes>
         </Slide>    
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>KeyValuePair</Heading>
           <List type="A">
-            <Appear><ListItem>Χρησιμοποιείται εσωτερικά από το Dictionary</ListItem></Appear>
-            <Appear><ListItem>Δεν έχει νόημα να το χρησιμοποιήσουμε, προτιμούμε το Dictionary</ListItem></Appear>
+            <Appear><ListItem>Used internally by Dictionary</ListItem></Appear>
+            <Appear><ListItem>No point in using it. Prefer Dictionary</ListItem></Appear>
           </List>
+          <Notes>
+            <ul>
+              <li>Χρησιμοποιείται εσωτερικά από το Dictionary</li>
+              <li>Δεν έχει νόημα να το χρησιμοποιήσουμε, προτιμούμε το Dictionary</li>
+            </ul>
+          </Notes>
         </Slide>  
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={1} textColor="secondary">LinkedList</Heading>
           <List type="A">
-            <Appear><ListItem>Υλοποίηση της δομής δεδομένων Συνδεδεμένης Λίστας</ListItem></Appear>
+            <Appear><ListItem>Implemntation of Linked List Data Structure</ListItem></Appear>
           </List>
+          <Notes>
+            <h2>Υλοποίηση της δομής δεδομένων Συνδεδεμένης Λίστας</h2>
+          </Notes>
         </Slide>   
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={3} textColor="tertiary" caps>Sorted Collections</Heading>
@@ -120,20 +159,33 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>System Collections Concurrent</Heading>
           <List type="A">
-            <Appear><ListItem>Παρέχουν thread safe access σε shared data</ListItem></Appear>
-            <Appear><ListItem>Βελτιώνουν το scaling και την απόδοση των εφαρμογών multi-threading</ListItem></Appear>
+            <Appear><ListItem>Provide thread safe access on shared data</ListItem></Appear>
+            <Appear><ListItem>Improve scaling and performance of multi-threading apps</ListItem></Appear>
           </List>
+          <Notes>
+            <li>Παρέχουν thread safe προσπέλαση σε shared data</li>
+            <li>Βελτιώνουν το scaling και την απόδοση των εφαρμογών multi-threading</li>
+          </Notes>
         </Slide>  
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={1} textColor="secondary">BlockingCollection</Heading>
           <List type="A">
-            <Appear><ListItem>Υλοποίηση του Producer Consumer pattern</ListItem></Appear>
-            <Appear><ListItem>Προσθέτει και αφαιρεί αντικείμενα από πολλαπλά thread</ListItem></Appear>
-            <Appear><ListItem>Παίρνει ως προαιρετική παράμετρο μέγιστη χωρητικότητα</ListItem></Appear>
-            <Appear><ListItem>Παρέχει cancellation</ListItem></Appear>
-            <Appear><ListItem>Τα TryAdd και TryTake δεν είναι blocking</ListItem></Appear>
+            <Appear><ListItem>Producer Consumer pattern implementation</ListItem></Appear>
+            <Appear><ListItem>Inserts and remove items in multi-threading matter</ListItem></Appear>
+            <Appear><ListItem>Accepts max capacity as an optional parameter </ListItem></Appear>
+            <Appear><ListItem>Provides cancellation</ListItem></Appear>
+            <Appear><ListItem>Adds Non Blocking TryAdd &amp; TryTake</ListItem></Appear>
           </List>
           <Appear><Text size={3} textColor="primary">Demo Time!</Text></Appear>
+          <Notes>
+            <ul>
+              <li>Υλοποίηση του Producer Consumer pattern</li>
+              <li>Προσθέτει και αφαιρεί αντικείμενα από πολλαπλά thread</li>
+              <li>Παίρνει ως προαιρετική παράμετρο μέγιστη χωρητικότητα</li>
+              <li>Παρέχει cancellation</li>
+              <li>Τα TryAdd και TryTake δεν είναι blocking</li>
+            </ul>
+          </Notes>
         </Slide>    
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={3} textColor="tertiary" caps>ConcurrentBag</Heading>
