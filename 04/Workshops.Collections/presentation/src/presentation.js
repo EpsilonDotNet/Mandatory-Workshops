@@ -11,7 +11,8 @@ import {
   Text,
   CodePane,
   Notes,
-  Appear
+  Appear,
+  Image
 } from "spectacle";
 
 // Import theme
@@ -30,6 +31,10 @@ const theme = createTheme({
   primary: "Calibri",
   secondary: "Candara"
 });
+
+const images = {
+  cheatSheet: require('./assets/cheatSheet.jpg')
+};
 
 export default class Presentation extends React.Component {
   render() {
@@ -139,10 +144,10 @@ export default class Presentation extends React.Component {
             </ul>
           </Notes>
         </Slide>  
-        <Slide transition={["fade"]} bgColor="tertiary">
+        <Slide transition={["fade"]} bgColor="tertiary">e
           <Heading size={1} textColor="secondary">LinkedList</Heading>
           <List type="A">
-            <Appear><ListItem>Implemntation of Linked List Data Structure</ListItem></Appear>
+            <Appear><ListItem>Implementation of Linked List Data Structure</ListItem></Appear>
           </List>
           <Notes>
             <h2>Υλοποίηση της δομής δεδομένων Συνδεδεμένης Λίστας</h2>
@@ -190,11 +195,15 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={3} textColor="tertiary" caps>ConcurrentBag</Heading>
           <List type="A">
-            <Appear><ListItem>Υλοποίηση του Work stealing algorithm</ListItem></Appear>
-            <Appear><ListItem>Thread Safe υλοποίηση για αντικείμενα ενός collection χωρίς προκαθορισμένη σειρά.</ListItem></Appear>
+            <Appear><ListItem>Work stealing algorithm implementation</ListItem></Appear>
+            <Appear><ListItem>Thread Safe implementation for objects of a collection with no predefined order.</ListItem></Appear>
           </List>
           <Appear><Text size={3} textColor="tertiary">Demo Time!</Text></Appear>
           <Notes>
+            <ul>
+              <li>Υλοποίηση του Work stealing algorithm</li>
+              <li>Thread Safe υλοποίηση για αντικείμενα ενός collection χωρίς προκαθορισμένη σειρά.</li>
+            </ul>
             <p>In parallel computing, work stealing is a scheduling strategy for multithreaded computer programs.</p>
             <p>It solves the problem of executing a dynamically multithreaded computation, one that can "spawn" new threads of execution, on a statically multithreaded computer, with a fixed number of processors (or cores).</p>
             <p>It does so efficiently both in terms of execution time, memory usage, and inter-processor communication.</p>
@@ -203,23 +212,32 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>ConcurrentDictionary</Heading>
           <List type="A">
-            <Appear><ListItem>Thread Safe υλοποίηση του Dictionary</ListItem></Appear>
+            <Appear><ListItem>Thread Safe implementation of Dictionary</ListItem></Appear>
           </List>
           <Appear><Text size={3} textColor="tertiary">Demo Time!</Text></Appear>
+          <Notes>
+            <h2>Thread Safe υλοποίηση του Dictionary</h2>
+          </Notes>
         </Slide> 
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={1} textColor="secondary">ConcurrentQueue</Heading>
           <List type="A">
-            <Appear><ListItem>Thread sage Ουρά</ListItem></Appear>
+            <Appear><ListItem>Thread sage Queue</ListItem></Appear>
           </List>
           <Appear><Text size={3} textColor="primary">Demo Time!</Text></Appear>
+          <Notes>
+            <h2>Thread sage Ουρά</h2>
+          </Notes>
         </Slide>  
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={3} textColor="tertiary" caps>ConcurrentStack</Heading>
           <List type="A">
-            <Appear><ListItem>Thread safe Στοίβα</ListItem></Appear>
+            <Appear><ListItem>Thread safe Stack</ListItem></Appear>
           </List>
           <Appear><Text size={3} textColor="tertiary">Demo Time!</Text></Appear>
+          <Notes>
+            <h2>Thread safe Στοίβα</h2>
+          </Notes>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>System Collections ​Specialized</Heading>
@@ -227,22 +245,39 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={1} textColor="secondary">HybridDictionary</Heading>
           <List type="A">
-            <Appear><ListItem>Χρησιμοποιείται όπως το Dictionary</ListItem></Appear>
-            <Appear><ListItem>Προτείνετε σε περιπτώσεις όπου έχουμε άγνωστο αριθμό στοιχείων.</ListItem></Appear>
-            <Appear><ListItem>Σε μικρά collection χρησιμοποιεί το ListDictionary και σε μεγάλα collection το HashTable</ListItem></Appear>
+            <Appear><ListItem>Used like Dictionary</ListItem></Appear>
+            <Appear><ListItem>Suggested for cases when there is unknown number of elements</ListItem></Appear>
+            <Appear><ListItem>In small collections ListDictionary is used and in large collections HashTable</ListItem></Appear>
           </List>
+          <Notes>
+            <ul>
+              <li>Χρησιμοποιείται όπως το Dictionary</li>
+              <li>Προτείνετε σε περιπτώσεις όπου έχουμε άγνωστο αριθμό στοιχείων</li>
+              <li>Σε μικρά collection χρησιμοποιεί το ListDictionary και σε μεγάλα collection το HashTable</li>
+            </ul>
+          </Notes>
         </Slide>   
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={3} textColor="tertiary" caps>ListDictionary</Heading>
           <List type="A">
-            <Appear><ListItem>Προτείνεται για λιγότερα αντικείμενα από 10</ListItem></Appear>
-            <Appear><ListItem>Δεν χρησιμοποιείτε για μεγάλα collection</ListItem></Appear>
+            <Appear><ListItem>Suggested for less than 10 objects</ListItem></Appear>
+            <Appear><ListItem>Don't use it for large collection</ListItem></Appear>
           </List>
           <Appear><Text size={3} textColor="tertiary">Demo Time!</Text></Appear>
-        </Slide>     
+          <Notes>
+            <ul>
+              <li>Προτείνεται για λιγότερα αντικείμενα από 10</li>
+              <li>Δεν χρησιμοποιείτε για μεγάλα collection</li>
+            </ul>
+          </Notes>
+        </Slide> 
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+        <Heading size={5} textColor="tertiary">.NET Big-O Algorithm</Heading>
+          <Image src={images.cheatSheet} width={800} />
+      </Slide>  
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={3} textColor="secondary" caps>That's it</Heading>
-          <Heading size={3} textColor="tertiary" caps>Thank for not sleeping</Heading>
+          <Heading size={3} textColor="tertiary" caps>Thank you for not sleeping</Heading>
           <Heading size={3} textColor="tertiary" caps>PRs & Issues are welcome</Heading>
         </Slide>      
       </Deck>
